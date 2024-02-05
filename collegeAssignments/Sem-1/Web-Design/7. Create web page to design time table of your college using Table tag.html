@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+    <style>
+        .td1 {
+            background-color: rgba(255, 0, 0, 0.116);
+        }
+
+        td {
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        th {
+            background-color: rgba(255, 0, 0, 0.116);
+            color: red;
+        }
+
+        .PRACTICAL {
+            background-color: rgba(0, 128, 0, 0.116);
+            color: green;
+        }
+
+        .time {
+            background-color: rgba(0, 0, 255, 0.116);
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2" style="border-radius: 20px; border-color: rgb(255, 0, 0);border-style: solid;" cellspacing="8"
+        cellpadding="20" align="center">
+        <caption style="font-size: large; color: rgb(255, 0, 0);">
+            <h1>Time Table Sem- I/III/V (2013-24)</h1>
+        </caption>
+        <tr>
+            <th>
+                <h3>Time</h3>
+            </th>
+            <th>
+                <h3>FYBCA</h3>
+            </th>
+            <th>
+                <h3>SYBCA</h3>
+            </th>
+            <th>
+                <h3>TYBCA</h3>
+            </th>
+        </tr>
+        <tr>
+            <td class="time">11:30 TO 12:15 AM</td>
+            <td>(BCA 104) Design-I</td>
+            <td rowspan="2" text align="center" class="PRACTICAL">PRACTICAL</td>
+            <td>(BCA 502)Cyber Security</td>
+        </tr>
+        <tr>
+            <td class="time">12:15 PM TO 01:00 PM</td>
+            <td>(BCA 102) Fundamental Of Computer</td>
+            <td>(BCA 503) ASP.NET</td>
+        </tr>
+        <tr>
+            <td class="time">01:00 PM TO 01:30 PM</td>
+            <td colspan="3" class="td1" text align="center" style=" color:red">BREAK</td>
+        </tr>
+        <tr>
+            <td class="time">01:30 PM TO 02:15 PM</td>
+            <td>(BCA 105) Programming In C-I</td>
+            <td>(BCA 304) Web Development Technology-I</td>
+            <td rowspan="2" text align="center" class="PRACTICAL">PRACTICAL</td>
+        </tr>
+        <tr>
+            <td class="time">02:15 PM TO 03:00 PM</td>
+            <td>(BCA 101) Fundamentals of Accounting</td>
+            <td>(BCA 302) Operating System</td>
+        </tr>
+        <tr>
+            <td class="time">03:00 PM TO 03:45 PM</td>
+            <td rowspan="2" text align="center" class="PRACTICAL">PRACTICAL</td>
+            <td>(BCA 303) Programming in C++</td>
+            <td>(BCA 504) Software Engineering</td>
+        </tr>
+        <tr>
+            <td class="time">03:45 PM TO 04:30 PM</td>
+            <td>(BCA 301) Fundamental Mathematics & Statics</td>
+            <td>(BCA 501) Entrepreneurship Development</td>
+        </tr>
+    </table </body>
+
+</html>
