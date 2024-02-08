@@ -2,8 +2,13 @@
 
 void main()
 {
-	char x = '*';
-	for(int i= 1; i<=5; i++)
+	triangle(7);
+}
+
+void triangle(int line)
+{
+    char x = '*';
+	for(int i= 1; i<=line; i++)
 	{
 	    printf("\n");
 		for(int j= 1; j<=i; j++)
