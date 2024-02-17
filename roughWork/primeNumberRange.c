@@ -28,3 +28,24 @@ int prime(int limit)
         }
     }
 }
+
+/*
+#include <stdio.h>
+
+void main()
+{
+    int div[3] = {2, 3, 5, 7};
+    int x,lim = 50;
+    for(int i = 1; i <= lim; i++)
+    {
+        int prime = 0;
+        for(int j = 0; j <= 3; j++)
+        {
+            if(i % div[j] == 0)
+            prime++;
+        }
+        if(prime < 3)
+        printf("%d ",i);
+    }
+}
+*/
