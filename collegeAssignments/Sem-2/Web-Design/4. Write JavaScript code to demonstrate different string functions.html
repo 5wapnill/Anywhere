@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin-left: 15%;
+            background-color: rgb(37, 37, 37);
+            color: rgb(220, 229, 237);
+            font-size: 30;
+            line-height: 65px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .q {
+            color: rgb(179, 179, 227);
+            /* color: rgb(162, 162, 206); */
+            width: 500px;
+            display: inline-block;
+        }
+
+        .a {
+            display: inline;
+        }
+    </style>
+    <title>
+        swapnilMore
+    </title>
+    <script>
+        let str = " Hello world!, myself Swapnil More ";
+        let add = "and I am from Shahada"
+        document.write("<div>");
+
+        document.write(`<div class = "q";>Original string</div><p class="a";> = ${str}<br>`);
+        document.write(`<div class = "q";>charAt(7)</div><p class="a";> = ${str.charAt(7)}<br>`);
+        document.write(`<div class = "q";>concat(add)</div><p class="a";> = ${str.concat(add)}<br>`);
+        document.write(`<div class = "q";>replace("world","Galaxy")</div><p class="a";> = ${str.replace("world", "Galaxy")}<br>`);
+        document.write(`<div class = "q";>substr(7,15)</div><p class="a";> = ${str.substr(7, 15)}<br>`);
+        document.write(`<div class = "q";>substring(7,15)</div><p class="a";> = ${str.substring(7, 15)}<br>`);
+        document.write(`<div class = "q";>slice(7,20)</div><p class="a";> = ${str.slice(7, 20)}<br>`);
+        document.write(`<div class = "q";>toUpperCase()</div><p class="a";> = ${str.toUpperCase()}<br>`);
+        document.write(`<div class = "q";>toLowerCase()</div><p class="a";> = ${str.toLowerCase()}<br>`);
+        document.write(`<div class = "q";>trim()</div><p class="a";> = ${str.trim()}<br>`);
+        document.write(`<div class = "q";>includes("Hello")</div><p class="a";> = ${str.includes("Hello")}<br>`);
+        document.write(`<div class = "q";>search("Hello")</div><p class="a";> = ${str.search("Hello")}<br>`);
+        document.write(`<div class = "q";>split()</div><p class="a";> = ${str.split()}<br>`);
+
+        document.write("</div>");
+    </script>
+</head>
+
+</html>
