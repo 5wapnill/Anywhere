@@ -48,4 +48,24 @@ void main()
         printf("%d ",i);
     }
 }
+
+*** more accurate than upper one ***
+#include <stdio.h>
+
+void main()
+{
+    int div[4] = {2, 3, 5, 7};
+    int x,lim = 1000;
+    for(int i = 1; i <= lim; i++)
+    {
+        int prime = 0;
+        for(int j = 0; j <= 3; j++)
+        {
+            if(i % div[j] == 0)
+            prime++;
+        }
+        if(prime == 0)
+        printf("%d ",i);
+    }
+}
 */
