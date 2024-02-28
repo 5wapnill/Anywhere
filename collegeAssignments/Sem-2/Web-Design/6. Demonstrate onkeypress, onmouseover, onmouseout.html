@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            height: 100%;
+            width: 100%;
+        }
+
+        h1 {
+            color: white;
+            font-size: 80;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            height: 50px;
+            width: 120px;
+            background-color: #abfabc;
+            border: none;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            padding: 10px;
+            font-weight: 900;
+            margin: 30px;
+        }
+
+        #main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 70%;
+        }
+
+        #log {
+            text-align: center;
+            width: 50%;
+            padding: 50px;
+            background-color: #8418d744;
+            border: none;
+            border-radius: 30px;
+        }
+
+        .up {
+            height: 50px;
+            width: 400px;
+            margin: 14px;
+            background-color: #ffffff;
+            border: none;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 29px;
+            color: rgb(0, 0, 0);
+        }
+
+        #typ {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #typing {
+            text-align: center;
+            font-size: 50;
+            border-radius: 60px;
+            margin: 30px;
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            width: 500px;
+            background-color: #000000;
+            align-items: center;
+        }
+    </style>
+    <script src="6. Demonstrate onkeypress, onmouseover, onmouseout.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="typ">
+        <div id="typing">
+            <h4>Typing</h4>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="log">
+            <div id="head">
+                <h1>Login</h1>
+            </div>
+            <div>
+                <input class="up" type="text" placeholder="Username" id="uName" name="uName" onmouseover="uChange()"
+                    onmouseout="uChangeBack()" onkeypress="onpress()" onkeyup="onup()">
+            </div>
+            <div>
+                <input class="up" type="password" placeholder="Password" id="pWord" name="pWord" onmouseover="pChange()"
+                    onmouseout="pChangeBack()" onkeypress="onpress()" onkeyup="onup()">
+            </div>
+            <div>
+                <input type="button" value="submit" class="button" onclick="login()">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
