@@ -1,15 +1,16 @@
+<h1>Multiplication Table of <?= $_GET['num']; ?></h1>
 
-<h1>Multiplication Table</h1>
+<div class="cont">
+    <?php
 
-<div class = "cont"><?php
+        $num = $_GET['num'];
 
-$num = $_GET['num'];
+        for ($i = 1; $i <= 10; $i++)
+        {
+            echo "<p>" . $i . " x " . $num . " = " . $i * $num . "<br>" . "</p>";
+        }
 
-for($i = 1; $i <= 10; $i++)
-{
-    echo "<p>".$i." x ".$num." = ".$i * $num."<br>"."</p>";
-}
-?>
+    ?>
 </div>
 <style>
     body {
@@ -30,6 +31,4 @@ for($i = 1; $i <= 10; $i++)
     p {
         font-size: 20px;
     }
-
-
 </style>
