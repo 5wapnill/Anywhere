@@ -1,9 +1,11 @@
-const addButton = document.getElementById('btn');
-const field = document.getElementById('con');
+var i = 0;
 
-addButton.addEventListener('click', function(){
-    const ninp = document.createElement('input');
-    ninp.type = 'number';
-    ninp.placeholder = 'Enter Marks';
-})
+function addMore() {
+    i++
+    html = `<input type="number" id="marks" name="marks${i}" placeholder="Enter Marks"\>`
+    var inpdiv = document.getElementById('inpdiv')
+    inpdiv.innerHTML += html
+}
+
+
 

@@ -10,20 +10,16 @@
 
     <div class="main">
         <h1>Student Grade Calculator</h1>
-        <form action="code.php">
-            <div class="input">
-                <input class="inputx" type="text" id="name" placeholder="Enter Name">
-                <input type="number" id="marks1" placeholder="Enter Marks of 1st subject">
-                <input type="number" id="marks2" placeholder="Enter Marks of 2nd subject">
-                <input type="number" id="marks3" placeholder="Enter Marks of 3rd subject">
-                <div id="con">
-                    
-                </div>
-                <button onclick="calculate()">Calculate</button>
+        <form action="code.php" id="fm" method="post">
+            <div class="inputCon" id="inpdiv">
+                <input  type="text" id="name" name="name" placeholder="Enter Name">
+                <input type="number" id="marks" name="marks" placeholder="Enter Marks"\>
             </div>
+            <div class="btn" onclick="addMore()">
+                <p>+</p>
+            </div>
+            <button type="submit">Calculate</button>
         </form>
-        <button id="btn">Add more</button>
-        <div id="result"></div>
     </div>
 
 </body>
