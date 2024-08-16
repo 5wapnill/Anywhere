@@ -70,7 +70,7 @@ select {
 
 </head>
 <body>
-
+    <h1>Simple Calculator</h1>
     <div class="main">
         <form action="index.php" class="form" method="GET" target="_self">
             <div class="cal">
