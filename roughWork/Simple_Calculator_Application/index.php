@@ -9,7 +9,7 @@
 
 <body>
     <div id="page1">
-        <form method="GET" target="_self">
+        <form action="#" method="GET" target="_self">
             <input type="text" name="cal" id="cal">
             <input type="submit" value="calculate"><br>
             <label for="cal">result = </label> <?= $x = " " ?>
