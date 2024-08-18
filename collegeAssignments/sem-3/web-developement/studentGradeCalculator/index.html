@@ -3,7 +3,7 @@
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </head>
 
 <body>
@@ -12,11 +12,11 @@
         <h1>Student Grade Calculator</h1>
         <form action="code.php" id="fm" method="post">
             <div class="inputCon" id="inpdiv">
-                <input  type="text" id="name" name="name" placeholder="Enter Name">
-                <input type="number" id="marks" name="marks" placeholder="Enter Marks"\>
-            </div>
-            <div class="btn" onclick="addMore()">
-                <p>+</p>
+                <input  type="text" id="name" name="name" placeholder="Enter your Name" required>
+                <input type="number" id="marks" name="Comp" placeholder="Enter Computer fundamentals Marks" required\>
+                <input type="number" id="marks" name="C" placeholder="Enter C Programming Marks" required\>
+                <input type="number" id="marks" name="Acc" placeholder="Enter Accounting Marks" required\>
+                <input type="number" id="marks" name="Web" placeholder="Enter Web design Marks" required\>
             </div>
             <button type="submit">Calculate</button>
         </form>

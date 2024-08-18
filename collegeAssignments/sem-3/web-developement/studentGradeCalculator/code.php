@@ -1,33 +1,85 @@
 <?php
 
-foreach ($_POST as $key => $value) {
-    if (strpos($key, 'marks') === 0) {
-        // Do something with the value
-        echo "Marks for subject $key: $value<br>";
-    }
-}
+$name = $_POST["name"];
+$s1 = $_POST["Comp"];
+$s2 = $_POST["C"];
+$s3 = $_POST["Acc"];
+$s4 = $_POST["Web"];
 
-$totalSubjects = count($_POST) - 1; // assuming 'name' is the first input element
-for ($i = 1; $i <= $totalSubjects - 1; $i++) {
-    $marks[$i] = $_POST["marks$i"];
-}
+$total = $s1 + $s2 + $s3 + $s4;
+$percentage = ($total / 400) * 100;
 
-$totalMarks = array_sum($marks);
-$percentage = ($totalMarks / ($totalSubjects * 100)) * 100;
-
-echo "Total Marks: $totalMarks<br>";
-echo "Percentage: $percentage%<br>";
 
 if ($percentage >= 80) {
-    echo "Grade: A+";
+    $grade = " A+";
 } elseif ($percentage >= 60) {
-    echo "Grade: A";    
+    $grade = " A";
 } elseif ($percentage >= 50) {
-    echo "Grade: B";
+    $grade = " B";
 } elseif ($percentage >= 40) {
-    echo "Grade: C";
+    $grade = " C";
 } else {
-    echo "Grade: F";
+    $grade = " F";
 }
 
 ?>
+
+<!DOCTYPE html>
+
+<head>
+    <title>Grade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color:rgb(255, 245, 245);
+        }
+        h1{
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 1em;
+            color: lightcyan;
+        }
+        table td{
+            font-size: 2em;
+            padding: 1em;
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Grade</h1>
+        <table >
+            <tr>
+                <td>hello, <?php echo $name ?></td>
+            </tr>
+            <tr>
+                <td>Total Marks: </td>
+                <td><?php echo $total ?></td>
+            </tr>    
+            <tr>
+                <td>Percentage: </td>
+                <td><?php echo "$percentage%" ?></td>
+            </tr>    
+            <tr>
+                <td>Grade: </td>
+                <td><?php echo $grade ?></td>
+            </tr>    
+        </table>
+    </div>
+</body>
+
+</html>
