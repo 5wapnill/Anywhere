@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +13,8 @@ body{
     padding: 50px;
     height: 100vh;
 }
-.main{
+
+.main {
     height: 80%;
     padding: 30px;
     border-radius: 10px;
@@ -23,31 +25,38 @@ body{
     align-items: center;
     font-size: 1.2em;
 }
-h1{
+
+h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
 }
-.dis{
+
+.dis {
     padding: 20px;
     width: 50%;
     text-align: center;
     color: rgb(120, 120, 120);
 }
-p{
+
+p {
     padding: 20px;
     height: 130px;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 40%;
 }
-input[placeholder]{
+
+input[placeholder] {
     font-size: 20px;
 }
-input,button {
+
+input,
+button {
     height: 50px;
     width: 250px;
     border-radius: 5px;
@@ -60,7 +69,8 @@ input,button {
     font-size: 2em;
     background-color: rgb(252, 236, 236);
 }
-button{
+
+button {
     background-color: rgb(255, 225, 225);
     width: 100px;
     height: 50px;
