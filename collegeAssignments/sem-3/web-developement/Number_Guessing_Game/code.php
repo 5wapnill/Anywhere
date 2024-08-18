@@ -1,24 +1,24 @@
 <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    color: rgb(120, 120, 120);
-    padding: 50px;
-    font-size: 3em;
-    height: 80%;
-}
-span{
-    color: rgb(255, 225, 225);
-}
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 0, 0);
+        color: rgb(120, 120, 120);
+        padding: 50px;
+        font-size: 3em;
+        height: 80%;
+    }
 
+    span {
+        color: rgb(255, 225, 225);
+    }
 </style>
 
 <?php
