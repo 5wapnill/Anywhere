@@ -1,6 +1,8 @@
 # Anywhere
 this repo created to access important data anywhere
 
+https://5wapnil.notion.site/Cpp-practical-11816458ed1c80b9a195e898633aba8b?pvs=4
+
 ```
 
 
