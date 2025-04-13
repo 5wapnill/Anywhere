@@ -1,6 +1,5 @@
 # Anywhere
 this repo created to access important data anywhere
-https://5wapnil.notion.site/PHP-Practical-Solutions-7b2b1998679841eeb0c9b9dbe4404418?pvs=4
 
 ```
 
